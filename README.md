@@ -45,12 +45,13 @@ uses a form to obtain data with a get method.<br>
 
 ![alt text](screenshots/Api-2.jpg) <br>
 
-An SQL Query is generated based on the inputted parameters<br>
+An SQL Query is generated and executed based on the inputted parameters<br>
 
 ![alt text](screenshots/Api-3.jpg) <br>
 
 ## Queries utilizing the Database
+The following are queries that utilize the database to deliver relevant information to the user
 
-![alt text](screenshots/queries1.jpg) <br>
+![alt text](screenshots/queries.jpg) <br>
 
 
