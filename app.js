@@ -4,18 +4,11 @@ import { Arrivals, Departures, Employees, Engineers, AvTechnician, Cleaners, Bag
 //const bodyParser = require('body-parser');
 const app = express();
 
-//var routes = require("./routes"); //linking routes file
 
 //setting up port
 app.set("view engine", "ejs")
 
-/*app.set("port", process.env.PORT || 3000);
 
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine","ejs");
-app.use(express.static(path.join(__dirname, 'css')));
-app.use(express.static(path.join(__dirname, 'images')));
-*/
 
 app.get("/departures", async (req,res) => {
     console.log("im on the departures page");
@@ -90,26 +83,11 @@ app.get("/employees/Caterer", async (req,res) => {
          a,
     })
 });
-// app.get("/results", async (req,res)=>{
-//     console.log("im on the results page");
-//     const IATACode = req.body.IATACode;
-//     const FlightNo = req.body.FlightNo;
-//     const a = await Home(IATACode,FlightNo)
-//     console.log(a);
-//     res.render("results.ejs", {
-//         a,
-//    });
-//    res.json({ result: result });
-//     // res.render("results.ejs");
-    
-// });
+
 
 app.use(express.urlencoded({ extended: true }));
 
-// app.get("/Search", function (req,res){
-//     console.log("im on the operations page");
-//     res.render("Search.ejs");
-// });
+
 app.get("/operations", async (req,res)=> {
     console.log("im on the operations page");
     const a = await Operations()
@@ -132,22 +110,9 @@ app.get("/", function (req,res){
 });
 
 
-// app.get('/results', async (req, res) => {
-//     const IATACode = req.query.IATACode;
-//     const FlightNo = req.query.FlightNo;
-//     const a = await Home(IATACode,FlightNo)
-//     console.log(a);
-//     res.render("results.ejs", {
-//         a,
-//    })
-// });
-
-
 app.use(express.static("css"))
 
 const port = 6969
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
-
-//app.use(bodyParser.json());
