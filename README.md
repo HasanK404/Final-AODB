@@ -5,17 +5,17 @@ HTML, CSS, JavaScript, MySql, NodeJS and Web services.
 
 ## Installation/setup And Execution 
 Step 1. Unzip the entire file given in the drop box. <br>
-step 2. Unzip SQL_input data folder. <br>
-step 3. Open workbench and create new schema called AODB.<br>
-step 4. Import all SQL data into workbench.<br>
-step 5. Open mySQL workbench, and edit connection, note down hostname, username, and remeber your password.   <br>
-step 6. Go to the main unzipped folder, Unzip Data-Management-Finial-project, copy and paste all files from the folder into your Visual Studio Workspace.<br>
-step 7. Install Node js. <br>
+Step 2. Unzip SQL_input data folder. <br>
+Step 3. Open workbench and create new schema called AODB.<br>
+Step 4. Import all SQL data into workbench.<br>
+Step 5. Open mySQL workbench, and edit connection, note down hostname, username, and remeber your password.   <br>
+Step 6. Go to the main unzipped folder, Unzip Data-Management-Finial-project, copy and paste all files from the folder into your Visual Studio Workspace.<br>
+Step 7. Install Node js. <br>
 ![alt text](screenshots/InstallNodeJS.jpg) <br>
-step 8. Open a new terminal, in that terminal type "nodemon app".<br>
+Step 8. Open a new terminal, in that terminal type "nodemon app".<br>
 ![alt text](screenshots/IndexPage.jpg)<br>
-step 9. Open Google or Firefox<br>
-step 10. Type in yor browser "localhost:6969"<br>
+Step 9. Open Google or Firefox<br>
+Step 10. Type in your browser "localhost:6969"<br>
 
 
 # Overall Design
@@ -34,7 +34,7 @@ Throughout the website, users can navigate seamlessly between these sections, en
 
 ## JavaScript
 
-<h2>Rest API/JSON</h2>
+<h3>Rest API/JSON</h3>
 
 The Website use a REST API (GET Method) using ExpressJS and NodeJS (server) to obtain data from the database and display it to the frontend.<br>
 <h4>Connecting RestAPI to sql database</h4>
