@@ -7,10 +7,10 @@ HTML, CSS, JavaScript, MySql, NodeJS and Web services.
 Step 1. Unzip the entire file given in the drop box. <br>
 Step 2. Unzip SQL_input data folder. <br>
 Step 3. Open workbench and create new schema called AODB.<br>
-Step 4. Import all SQL data into workbench.<br>
+Step 4. Import all SQL data from the folder into workbench.<br>
 ![alt text](screenshots/WorkBench.JPG) <br>
 Step 5. Open mySQL workbench, and edit connection, note down hostname, username, and remeber your password. (write it down)  <br>
-Step 6. Go to the main unzipped folder, Unzip Data-Management-Finial-project, copy and paste all files from the folder into your Visual Studio Workspace.<br>
+Step 6. Go to the main unzipped folder, Data-Management-Finial-project, copy and paste all files from the folder into your Visual Studio Workspace.<br>
 Step 7. go to databse.js file, change the connection detail given below, to the local connection of your Workbench. (From Step 5) <br>
 ![alt text](screenshots/database.JPG) <br>
 Step 8. Install Node js. <br>
