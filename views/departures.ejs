@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AODB</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="startTime()">
+    <div class="title">
+        <h2>Welcome to the Airport Operational Database!</h2>
+        <p>This Website is designed to help organize and display flights as well as their assigned crews</p>
+    </div>
+    <div class="topnav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/departures" class="active">Departures</a></li>
+            <li><a href="/arrivals">Arrivals</a></li>
+            <li><A href="/operations">Operations</a></li>
+            <li><a href="/employees">Employees</a></li>
+        </ul>
+    </div>
+
+<title>AODB | Airports</title>
+<div class = "location">
+    <h4></h4>
+    <h2></h2>
+    <h4></h4>
+</div>
+
+<div class="search-container">
+    <div class="view">
+    <h2> Departing/Outbound Flights </h2>
+    </div>
+    <table>
+        <tr>
+          <th>IATACode</th><th>AirlineNo</th><th>Destination</th><th>AirlineName</th><th>DepTime</th><th>GateNo</th>
+        </tr>
+      
+        <% a.forEach (ai => { %>
+          <tr>
+            <td><%= ai.IATACode %></td>
+            <td><%= ai.AirlineNo %></td>
+            <td><%= ai.city %></td>
+            <td><%= ai.AirlineName %></td>
+            <td><%= ai.DepTime%></td>
+            <td><%= ai.GateNo %></td>
+          </tr>    
+        <% })%>
+      </table>
+<div class="srdep">
+    <input type="text" placeholder="Search Your departure information"></li>
+</div>
+
+</div>
+</body>
+</html>
+
+

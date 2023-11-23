@@ -1,0 +1,203 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: auto;
+  color: #000;
+  background-image: url("airport-terminal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+}
+ul{
+  list-style-type:none;
+}
+li{
+  list-style-type:none;
+}
+
+/*HEADER*/
+.title{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding:10px;
+  background-color: #212B38;
+  color: #fff;
+
+
+}
+.topnav {
+  background-color: #212B38;
+  border: 3px;
+  border-color: #212345;
+  overflow: hidden;
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  display:flex;
+  justify-content: center;
+}
+.topnav a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #212B38;
+  color: #2cbce6;
+  border-radius: 3px;
+  border-color: #fff;
+  transition:all 400ms ease;
+}
+.topnav input[type="text"] {
+  color:#2cbce6;
+  width:150%;
+  float: right;
+  padding: 8px;
+  margin-top: 6px;
+  margin-right: 6px;
+  border-radius: 6px ;
+  font-size: 14px;
+}
+
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: center;
+}
+
+.topnav li {
+  display: inline-block;
+}
+
+.topnav li a.active {
+  background-color: #212B38;
+  color: #2cbce6;
+}
+/*Start of INDEX.ejs*/
+.location {
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  padding:6px;
+  text-align: center;
+}
+.location h4{
+  color:#212B38;
+}
+
+.search-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding:10px;
+  background-color: #212B38;
+  color: #fff;
+  border: 2px solid #2cbce6;
+  border-radius: 16px;
+}
+
+.search-container li{
+  display:inline-block;
+
+}
+
+.search-container input[type="text"] {
+  text-align: center;
+  width:200px;
+  padding:10px;
+  margin:5px;
+  border: 1px solid #2cbce6;
+  border-radius: 16px;
+  background-color: #212B38;
+  color:#ffff;
+  transition: all 500ms ease;
+}
+.search-container input[type="text"]:hover {
+  border: 1px solid black;
+  background-color: #fff;
+  color:#000;
+  transition: all 400ms ease;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #2cbce6;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+table tr td {
+  border-bottom: 1px solid #2cbce6;
+  
+}
+
+table tr:last-child td {
+  border-bottom: none ;
+}
+
+td:hover {
+  transform: scale(1.1);
+  background-color: #212B38;
+}
+
+.submit{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding:10px;
+  background-color: #212B38;
+  color: #fff;
+  border: 1px solid #2cbce6;
+  border-radius: 16px;
+  transition: all 500ms ease;
+  margin-top: 10px;
+}
+.submit:hover{
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  transition: all 500ms ease;
+}
+
+.employees{
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  padding:10px;
+  background-color: #212B38;
+  color: #fff;
+  border: 1px solid #2cbce6;
+  border-radius: 16px;
+  transition: all 500ms ease;
+}
+.employees:hover{
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  transition: all 500ms ease;
+}
+.results{
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding:10px;
+  background-color: #212B38;
+  color: #fff;
+  
+}
+
+
+

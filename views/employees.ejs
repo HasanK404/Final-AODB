@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AODB</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="startTime()">
+    <div class="title">
+        <h2>Welcome to the Airport Operational Database!</h2>
+        <p>This Website is designed to help organize and display flights as well as their assigned crews</p>
+    </div>
+    <div class="topnav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/departures" >Departures</a></li>
+            <li><a href="/arrivals">Arrivals</a></li>
+            <li><a href="/operations">Operations</a></li>
+            <li><a href="/employees" class="active">Employees</a></li>
+        </ul>
+    </div>
+
+    <div class = "location">
+        <h4></h4>
+        <h2></h2>
+        <h4></h4>
+    </div>
+
+<title>AODB | Flights</title>
+<div class = "search-container">
+    <h4>Find Employees</h4>
+    <ul>
+        <li><a href="/employees/Engineers"><button class="employees">Engineers</button></a></li>
+        <li><a href="/employees/Technicians"><button class="employees">Technicians</button></a></li>
+        <li><a href="/employees/BaggageHandler"><button class="employees">Baggage Handler</button></a></li>
+        <li><a href="/employees/Cleaners"><button class="employees">Cleaners</button></a></li>   
+        <li><a href="/employees/ReFueler"><button class="employees">ReFueler</button></a></li> 
+        <li><a href="/employees/Caterer"><button class="employees">Caterer</button></a></li> 
+    </ul>
+    <div class ="results">
+        <h1>Database display</h1>
+    </div>  
+    <table>
+        <tr>
+          <th>EmpID</th><th>FName</th><th>LName</th><th>DepartmentName</th><th>PhoneNo</th>
+        </tr>
+      
+        <% a.forEach (ai => { %>
+          <tr>
+            <td><%= ai.EmpID %></td>
+            <td><%= ai.FName %></td>
+            <td><%= ai.LName%></td>
+            <td><%= ai.DepartmentName %></td>
+            <td><%= ai.PhoneNo%></td>
+          </tr>    
+        <% })%>
+      </table>
+</div>
+
+
+</body>
+</html>
+
+<script>
+/*to get the time in 24 hr format*/
+function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    m = checkTime(m);
+
+    document.getElementById('time').innerHTML =  h + ":" + m;
+    setTimeout(startTime, 1000);
+}    
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+
+function performEmployeeSearch() {
+    var resultsUrl = '/results' 
+/*    might need? to store variables  
+        'q1=' + encodeURIComponent(searchQuery1) +
+        '&q2=' + encodeURIComponent(searchQuery2) +
+        '&q3=' + encodeURIComponent(searchQuery3); */
+
+        // Redirect to the results page
+    window.location.href = resultsUrl;
+}
+
+</script>
+
+
+</body>
+</html>

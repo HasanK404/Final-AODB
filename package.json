@@ -1,0 +1,25 @@
+{
+  "name": "aodbapp",
+  "version": "0.0.1",
+  "description": "Data management project coded in HTML, CSS, and JavaScript utilizing nodeJS, Restful APIS and an SQL Database ",
+  "main": "index.js",
+  "type": "module",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github/Harsh-0214/Data-Management-Final-Project.git"
+  },
+  "author": "HarshTamakuwala",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.7.4",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.3",
+    "path": "^0.12.7"
+  }
+
+}

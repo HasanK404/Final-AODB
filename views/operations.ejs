@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AODB</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="startTime()">
+    <div class="title">
+        <h2>Welcome to the Airport Operational Database!</h2>
+        <p>This Website is designed to help organize and display flights as well as their assigned crews</p>
+    </div>
+    <div class="topnav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/departures">Departures</a></li>
+            <li><a href="/arrivals">Arrivals</a></li>
+            <li><A href="/operations" class="active">Operations</a></li>
+            <li><a href="/employees">Employees</a></li>
+        </ul>
+    </div>
+
+<title>AODB | Aircrafts</title>
+<div class = "location">
+  <h4></h4>
+  <h2></h2>
+  <h4></h4>
+</div>
+
+<div class = "search-container">
+    <div class ="results">
+        <h1>Operations</h1>
+        <table>
+            <tr>
+              <th>ShiftTimeStart</th><th>GateNo</th><th>IATACode</th><th>AirlineNo</th><th>GCrewNo</th><th>MCrewNo</th><th>BeltNo</th><th>AircraftType</th><th>ShiftTimeEnd</th>
+            </tr>
+            <% a.forEach (ai => { %>
+              <tr>
+                <td><%= ai.ShiftTimeStart %></td>
+                <td><%= ai.GateNo %></td>
+                <td><%= ai.IATACode %></td>
+                <td><%= ai.AirlineNo %></td>
+                <td><%= ai.GCrewNo%></td>
+                <td><%= ai.MCrewNo %></td>
+                <td><%= ai.BeltNo %></td>
+                <td><%= ai.AircraftType %></td>
+                <td><%= ai.ShiftTimeEnd %></td>
+              </tr>    
+            <% })%>
+          </table>
+        <p>displays airport operations</p>
+    </div>  
+</div>
+
+
+</body>
+</html>
+
+<script>/*SCRIPTS*/
+
+/*to get the time in 24 hr format*/
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      m = checkTime(m);
+
+      document.getElementById('time').innerHTML =  h + ":" + m;
+      setTimeout(startTime, 1000);
+    }    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+</script>

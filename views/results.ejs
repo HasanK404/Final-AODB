@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AODB</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="startTime()">
+    <div class="title">
+        <h2>Welcome to the Airport Operational Database!</h2>
+        <p>This Website is designed to help organize and display flights as well as their assigned crews</p>
+    </div>
+    <div class="topnav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/departures">Departures</a></li>
+            <li><a href="/arrivals">Arrivals</a></li>
+            <li><A href="/operations">Operations</a></li>
+            <li><a href="/employees">Employees</a></li>
+            
+        </ul>
+    </div>
+
+<title>AODB | Aircrafts</title>
+<div class = "location">
+    <h4></h4>
+    <h2></h2>
+    <h4></h4>
+</div>
+
+<div class = "search-container">
+    <h4>Find Another Flight</h4>
+    <ul>
+        <form action="/search" method="get">
+        <li><input type="text" id="field1" name="field1" placeholder="IATA Code"></li>
+        <li><input type="text" id="field2" name="field2" placeholder="Flight Number"></li>  
+      </ul>
+      <input type="submit" value="Submit">
+    </form>
+
+    <div class ="results">
+        <h1>Results:</h1>
+        <table>
+            <tr>
+              <th>IATACode</th><th>AirlineNo</th><th>AirlineName</th><th>DepTime</th><th>ShiftTimeStart</th><th>ShiftTimeEnd</th><th>ShiftTimeEnd</th><th>GCrewNo</th><th>MCrewNo</th><th>BeltNo</th>
+            </tr>
+            <% a.forEach (ai => { %>
+              <tr>
+                <td><%= ai.IATACode %></td>
+                <td><%= ai.AirlineNo %></td>
+                <td><%= ai.AirlineName %></td>
+                <td><%= ai.DepTime %></td>
+                <td><%= ai.ShiftTimeStart%></td>
+                <td><%= ai.ShiftTimeEnd %></td>
+                <td><%= ai.GCrewNo %></td>
+                <td><%= ai.MCrewNo %></td>
+                <td><%= ai.BeltNo %></td>
+              </tr>    
+            <% })%>
+          </table>
+    </div>  
+</div>
+
+</body>
+</html>
