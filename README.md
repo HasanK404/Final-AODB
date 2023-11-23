@@ -38,6 +38,7 @@ Throughout the website, users can navigate seamlessly between these sections, en
 
 The Website use a REST API (GET Method) using ExpressJS and NodeJS (server) to obtain data from the database and display it to the frontend.<br>
 <h4>Connecting RestAPI to sql database</h4>
+
 ![alt text](screenshots/MySQL-Connection.jpg) <br>
 
 uses a form to obtain data with a get method.<br>
