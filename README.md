@@ -5,16 +5,16 @@ The Airport Operational Database (AODB) is an advanced relational database syste
 Languages, XML/JSON, and Web services.
 
 ## Installation/setup
-Step 1. unzip the entire file given in the drop box.
-step 2. unzip SQL_input data folder. 
-step 3. Open workbench and create new schema called AODB.
-step 4. Import all SQL data into workbench.
-step 5. Open mySQL workbench, and edit connection, note down hostname, username, and remeber your password.   
-step 6. Go to the main unzipped folder, Unzip Data-Management-Finial-project, copy and paste all files from the folder into your Visual studio  workspace.
-step 7. 
-step 8.
-step 9.
-step 10.
+Step 1. unzip the entire file given in the drop box. <br>
+step 2. unzip SQL_input data folder. <br>
+step 3. Open workbench and create new schema called AODB.<br>
+step 4. Import all SQL data into workbench.<br>
+step 5. Open mySQL workbench, and edit connection, note down hostname, username, and remeber your password.   <br>
+step 6. Go to the main unzipped folder, Unzip Data-Management-Finial-project, copy and paste all files from the folder into your Visual studio  workspace.<br>
+step 7. <br>
+step 8.<br>
+step 9.<br>
+step 10.<br>
 ## Execution (HASAN)
 
 # Overall Design
