@@ -12,7 +12,7 @@
     <script src="script.js" defer></script>
 </head>
 
-<body onload="startTime()">
+<body>
     <div class="title">
         <h2>Welcome to the Airport Operational Database!</h2>
         <p>This Website is designed to help organize and display flights as well as their assigned crews</p>
@@ -63,39 +63,6 @@
         <% })%>
       </table>
 </div>
-
-
-</body>
-</html>
-
-<script>
-/*to get the time in 24 hr format*/
-function startTime() {
-    const today = new Date();
-    let h = today.getHours();
-    let m = today.getMinutes();
-    m = checkTime(m);
-
-    document.getElementById('time').innerHTML =  h + ":" + m;
-    setTimeout(startTime, 1000);
-}    
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-
-function performEmployeeSearch() {
-    var resultsUrl = '/results' 
-/*    might need? to store variables  
-        'q1=' + encodeURIComponent(searchQuery1) +
-        '&q2=' + encodeURIComponent(searchQuery2) +
-        '&q3=' + encodeURIComponent(searchQuery3); */
-
-        // Redirect to the results page
-    window.location.href = resultsUrl;
-}
-
-</script>
 
 
 </body>

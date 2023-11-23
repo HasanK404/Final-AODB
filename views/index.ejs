@@ -12,7 +12,7 @@
     <script src="script.js" defer></script>
 </head>
 
-<body onload="startTime()">
+<body>
     <div class="title">
         <h2>Welcome to the Airport Operational Database!</h2>
         <p>This Website is designed to help organize and display flights as well as their assigned crews</p>
@@ -42,25 +42,13 @@
         <input type="text" id="field2" name="field2" placeholder="Flight Number"><br>
         <input class ="submit" type="submit" value="Submit">
     </form>
-
-    <div class ="results">
-        <h1>search leads to database display</h1>
-    </div>  
 </div>
 
-
-</body>
-</html>
-<script>
-function performSearch() {
-    // Get the values from the three input fields
-    var IATA_Code = document.getElementById('IATA_Code').value;
-    var flightNo = document.getElementById('flightNo').value;
-    var resultsUrl = '/results' 
-        // Redirect to the results page
-    window.location.href = resultsUrl;
-}
-</script>
+<div>
+    <h4></h4>
+    <h2></h2>
+    <h4></h4>
+</div>
 
 </body>
 </html>

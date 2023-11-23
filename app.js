@@ -1,13 +1,10 @@
 import express from 'express';
 import { Arrivals, Departures, Employees, Engineers, AvTechnician, Cleaners, BaggageHandler, CaterHandler, Refuler, Home, Operations} from './database.js'
 
-//const bodyParser = require('body-parser');
 const app = express();
-
 
 //setting up port
 app.set("view engine", "ejs")
-
 
 
 app.get("/departures", async (req,res) => {
